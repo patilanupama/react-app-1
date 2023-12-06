@@ -49,7 +49,7 @@ module.exports = {
       name: "FIRST_APP",
       filename: "remoteEntry.js",
       exposes: {
-        "./app": "./src/components/App",
+        "./app": "./src/components/App.js",
       },
     }),
   ],
