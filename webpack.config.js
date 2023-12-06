@@ -53,4 +53,18 @@ module.exports = {
       },
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    port: 8080,
+    
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    chunkFilename: '[id].chunk.js',
+    scriptType: 'text/javascript'
+  },
+  optimization: {
+    minimize: false,
+  },
 };
